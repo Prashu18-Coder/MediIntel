@@ -1,0 +1,24 @@
+{
+  "model": "TfidfVectorizer + LogisticRegression",
+  "labels": [
+    "Anxiety",
+    "Bipolar",
+    "Depression",
+    "Normal",
+    "Personality disorder",
+    "Stress",
+    "Suicidal"
+  ],
+  "accuracy": 0.772,
+  "train_samples": 42144,
+  "test_samples": 10537,
+  "per_class": {
+    "Anxiety": 0.8095,
+    "Bipolar": 0.7979,
+    "Depression": 0.7114,
+    "Normal": 0.9034,
+    "Personality disorder": 0.6932,
+    "Stress": 0.6124,
+    "Suicidal": 0.6819
+  }
+}

@@ -1,0 +1,2465 @@
+{
+  "diseases": [
+    {
+      "disease": "flu",
+      "symptoms": [
+        "fever",
+        "cough",
+        "sore throat",
+        "runny or stuffy nose",
+        "muscle aches",
+        "headache",
+        "fatigue"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%",
+      "risk": "moderate",
+      "symptom_text": "fever cough sore throat runny or stuffy nose muscle aches headache fatigue"
+    },
+    {
+      "disease": "bronchitis",
+      "symptoms": [
+        "cough",
+        "mucus production",
+        "shortness of breath",
+        "chest pain"
+      ],
+      "cures": [
+        "antibiotics",
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "pulmonologist"
+      ],
+      "risk_raw": "low (0.5%",
+      "risk": "low",
+      "symptom_text": "cough mucus production shortness of breath chest pain"
+    },
+    {
+      "disease": "pneumonia",
+      "symptoms": [
+        "fever",
+        "cough",
+        "shortness of breath",
+        "chest pain",
+        "fatigue"
+      ],
+      "cures": [
+        "antibiotics",
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "pulmonologist"
+      ],
+      "risk_raw": "moderate (1%)",
+      "risk": "moderate",
+      "symptom_text": "fever cough shortness of breath chest pain fatigue"
+    },
+    {
+      "disease": "heart attack",
+      "symptoms": [
+        "chest pain",
+        "shortness of breath",
+        "nausea",
+        "vomiting",
+        "lightheadedness",
+        "sweating"
+      ],
+      "cures": [
+        "emergency medical services"
+      ],
+      "doctors": [
+        "cardiologist"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "chest pain shortness of breath nausea vomiting lightheadedness sweating"
+    },
+    {
+      "disease": "stroke",
+      "symptoms": [
+        "sudden weakness",
+        "numbness on one side of the body",
+        "confusion",
+        "difficulty speaking",
+        "trouble seeing in one eye",
+        "severe headache"
+      ],
+      "cures": [
+        "emergency medical services"
+      ],
+      "doctors": [
+        "neurologist"
+      ],
+      "risk_raw": "high (15%)",
+      "risk": "high",
+      "symptom_text": "sudden weakness numbness on one side of the body confusion difficulty speaking trouble seeing in one eye severe headache"
+    },
+    {
+      "disease": "cancer",
+      "symptoms": [
+        "lump",
+        "unexplained weight loss",
+        "fatigue",
+        "changes in bowel",
+        "bladder habits",
+        "persistent cough",
+        "indigestion",
+        "unexplained bleeding or discharge"
+      ],
+      "cures": [
+        "surgery",
+        "chemotherapy",
+        "radiation therapy"
+      ],
+      "doctors": [
+        "oncologist"
+      ],
+      "risk_raw": "varies depending on the type of cancer",
+      "risk": "varies",
+      "symptom_text": "lump unexplained weight loss fatigue changes in bowel bladder habits persistent cough indigestion unexplained bleeding or discharge"
+    },
+    {
+      "disease": "diabetes",
+      "symptoms": [
+        "increased thirst",
+        "frequent urination",
+        "unexplained weight loss",
+        "fatigue",
+        "blurred vision",
+        "cuts that are slow to heal"
+      ],
+      "cures": [
+        "diet",
+        "exercise",
+        "medication"
+      ],
+      "doctors": [
+        "endocrinologist"
+      ],
+      "risk_raw": "high (25%)",
+      "risk": "high",
+      "symptom_text": "increased thirst frequent urination unexplained weight loss fatigue blurred vision cuts that are slow to heal"
+    },
+    {
+      "disease": "alzheimer's disease",
+      "symptoms": [
+        "memory loss",
+        "confusion",
+        "difficulty thinking",
+        "changes in personality or behavior"
+      ],
+      "cures": [
+        "there is no cure for alzheimer's disease",
+        "but there are treatments that can help manage the symptoms"
+      ],
+      "doctors": [
+        "neurologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "memory loss confusion difficulty thinking changes in personality or behavior"
+    },
+    {
+      "disease": "arthritis",
+      "symptoms": [
+        "pain",
+        "stiffness",
+        "swelling",
+        "inflammation in the joints"
+      ],
+      "cures": [
+        "medication",
+        "physical therapy",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "rheumatologist"
+      ],
+      "risk_raw": "varies depending on the type of arthritis",
+      "risk": "varies",
+      "symptom_text": "pain stiffness swelling inflammation in the joints"
+    },
+    {
+      "disease": "adenovirus",
+      "symptoms": [
+        "fever",
+        "sore throat",
+        "cough",
+        "conjunctivitis",
+        "rash",
+        "pink eye"
+      ],
+      "cures": [
+        "antibiotics",
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "fever sore throat cough conjunctivitis rash pink eye"
+    },
+    {
+      "disease": "aflatoxicosis",
+      "symptoms": [
+        "vomiting",
+        "diarrhea",
+        "jaundice",
+        "liver damage",
+        "death"
+      ],
+      "cures": [
+        "there is no cure for aflatoxicosis",
+        "but treatment may include supportive care",
+        "liver transplantation"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "vomiting diarrhea jaundice liver damage death"
+    },
+    {
+      "disease": "alcoholism",
+      "symptoms": [
+        "physical dependence on alcohol",
+        "tolerance to alcohol",
+        "withdrawal symptoms",
+        "impaired judgment",
+        "memory problems",
+        "liver damage",
+        "heart disease",
+        "cancer"
+      ],
+      "cures": [
+        "treatment for alcoholism may include counseling",
+        "medication",
+        "support groups"
+      ],
+      "doctors": [
+        "psychiatrist",
+        "addiction specialist"
+      ],
+      "risk_raw": "high (25%)",
+      "risk": "high",
+      "symptom_text": "physical dependence on alcohol tolerance to alcohol withdrawal symptoms impaired judgment memory problems liver damage heart disease cancer"
+    },
+    {
+      "disease": "allergic rhinitis",
+      "symptoms": [
+        "runny nose",
+        "sneezing",
+        "itchy eyes",
+        "itchy nose",
+        "throat",
+        "palate"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "allergy shots"
+      ],
+      "doctors": [
+        "allergist"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "runny nose sneezing itchy eyes itchy nose throat palate"
+    },
+    {
+      "disease": "anemia",
+      "symptoms": [
+        "fatigue",
+        "shortness of breath",
+        "pale skin",
+        "lightheadedness",
+        "dizziness"
+      ],
+      "cures": [],
+      "doctors": [
+        "hematologist"
+      ],
+      "risk_raw": "varies depending on the type of anemia",
+      "risk": "varies",
+      "symptom_text": "fatigue shortness of breath pale skin lightheadedness dizziness"
+    },
+    {
+      "disease": "anxiety disorder",
+      "symptoms": [
+        "excessive worry",
+        "fear",
+        "anxiety that interfere with daily life"
+      ],
+      "cures": [
+        "treatment for anxiety disorders may include therapy",
+        "medication",
+        "combination of both"
+      ],
+      "doctors": [
+        "psychologist",
+        "psychiatrist"
+      ],
+      "risk_raw": "varies depending on the type of anxiety disorder",
+      "risk": "varies",
+      "symptom_text": "excessive worry fear anxiety that interfere with daily life"
+    },
+    {
+      "disease": "appendicitis",
+      "symptoms": [
+        "pain in the lower right abdomen",
+        "nausea",
+        "vomiting",
+        "fever"
+      ],
+      "cures": [
+        "appendectomy"
+      ],
+      "doctors": [
+        "surgeon"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "pain in the lower right abdomen nausea vomiting fever"
+    },
+    {
+      "disease": "asperger syndrome",
+      "symptoms": [
+        "difficulty with social interaction",
+        "repetitive behaviors",
+        "restricted interests"
+      ],
+      "cures": [
+        "there is no cure for asperger syndrome",
+        "but there are treatments that can help manage the symptoms"
+      ],
+      "doctors": [
+        "psychologist",
+        "psychiatrist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "difficulty with social interaction repetitive behaviors restricted interests"
+    },
+    {
+      "disease": "asthma",
+      "symptoms": [
+        "wheezing",
+        "shortness of breath",
+        "coughing",
+        "chest tightness"
+      ],
+      "cures": [
+        "treatment for asthmmay include medication",
+        "lifestyle changes",
+        "allergy shots"
+      ],
+      "doctors": [
+        "allergist",
+        "pulmonologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "wheezing shortness of breath coughing chest tightness"
+    },
+    {
+      "disease": "bacterial meningitis",
+      "symptoms": [
+        "fever",
+        "headache",
+        "stiff neck",
+        "nausea",
+        "vomiting",
+        "sensitivity to light"
+      ],
+      "cures": [
+        "antibiotics"
+      ],
+      "doctors": [
+        "neurologist",
+        "neurosurgeon"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "fever headache stiff neck nausea vomiting sensitivity to light"
+    },
+    {
+      "disease": "bipolar disorder",
+      "symptoms": [
+        "extreme mood swings",
+        "from manito depression"
+      ],
+      "cures": [
+        "treatment for bipolar disorder may include medication",
+        "therapy",
+        "combination of both"
+      ],
+      "doctors": [
+        "psychologist",
+        "psychiatrist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "extreme mood swings from manito depression"
+    },
+    {
+      "disease": "bladder cancer",
+      "symptoms": [
+        "blood in the urine",
+        "pain or burning when urinating",
+        "frequent urination",
+        "urgency to urinate",
+        "incontinence"
+      ],
+      "cures": [
+        "surgery",
+        "chemotherapy",
+        "radiation therapy"
+      ],
+      "doctors": [
+        "urologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "blood in the urine pain or burning when urinating frequent urination urgency to urinate incontinence"
+    },
+    {
+      "disease": "blood clot",
+      "symptoms": [
+        "pain",
+        "swelling",
+        "redness",
+        "warmth",
+        "tenderness in the affected area",
+        "shortness of breath",
+        "chest pain",
+        "difficulty breathing",
+        "coughing up blood"
+      ],
+      "cures": [
+        "treatment for blood clot may include medication",
+        "surgery",
+        "combination of both"
+      ],
+      "doctors": [
+        "cardiologist",
+        "hematologist"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "pain swelling redness warmth tenderness in the affected area shortness of breath chest pain difficulty breathing coughing up blood"
+    },
+    {
+      "disease": "bursitis",
+      "symptoms": [
+        "pain",
+        "swelling",
+        "inflammation in bursa",
+        "which is small sac of fluid that cushions joints"
+      ],
+      "cures": [
+        "medication",
+        "rest",
+        "ice",
+        "compression",
+        "elevation"
+      ],
+      "doctors": [
+        "family doctor",
+        "orthopedist"
+      ],
+      "risk_raw": "varies depending on the bursa",
+      "risk": "varies",
+      "symptom_text": "pain swelling inflammation in bursa which is small sac of fluid that cushions joints"
+    },
+    {
+      "disease": "cervical cancer",
+      "symptoms": [
+        "abnormal pap test results",
+        "abnormal vaginal bleeding",
+        "pain during sex"
+      ],
+      "cures": [
+        "surgery",
+        "chemotherapy",
+        "radiation therapy"
+      ],
+      "doctors": [
+        "gynecologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "abnormal pap test results abnormal vaginal bleeding pain during sex"
+    },
+    {
+      "disease": "chickenpox",
+      "symptoms": [
+        "rash",
+        "fever",
+        "headache",
+        "muscle aches",
+        "fatigue"
+      ],
+      "cures": [
+        "antiviral medication",
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "rash fever headache muscle aches fatigue"
+    },
+    {
+      "disease": "chronic obstructive pulmonary disease (copd)",
+      "symptoms": [
+        "chronic bronchitis",
+        "emphysema"
+      ],
+      "cures": [
+        "treatment for copd may include medication",
+        "lifestyle changes",
+        "oxygen therapy"
+      ],
+      "doctors": [
+        "pulmonologist"
+      ],
+      "risk_raw": "varies depending on the type of copd",
+      "risk": "varies",
+      "symptom_text": "chronic bronchitis emphysema"
+    },
+    {
+      "disease": "cholesterol",
+      "symptoms": [
+        "high levels of cholesterol in the blood"
+      ],
+      "cures": [
+        "diet",
+        "exercise",
+        "medication"
+      ],
+      "doctors": [
+        "cardiologist"
+      ],
+      "risk_raw": "varies depending on the level of cholesterol",
+      "risk": "varies",
+      "symptom_text": "high levels of cholesterol in the blood"
+    },
+    {
+      "disease": "common cold",
+      "symptoms": [
+        "runny nose",
+        "sneezing",
+        "sore throat",
+        "cough",
+        "congestion"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "runny nose sneezing sore throat cough congestion"
+    },
+    {
+      "disease": "conjunctivitis",
+      "symptoms": [
+        "red",
+        "itchy",
+        "watery eyes"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "warm compresses"
+      ],
+      "doctors": [
+        "family doctor",
+        "ophthalmologist"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "red itchy watery eyes"
+    },
+    {
+      "disease": "depression",
+      "symptoms": [
+        "sadness",
+        "hopelessness",
+        "loss of interest in activities",
+        "changes in appetite",
+        "sleep",
+        "energy levels"
+      ],
+      "cures": [
+        "treatment for depression may include medication",
+        "therapy",
+        "combination of both"
+      ],
+      "doctors": [
+        "psychologist",
+        "psychiatrist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "sadness hopelessness loss of interest in activities changes in appetite sleep energy levels"
+    },
+    {
+      "disease": "diarrhea",
+      "symptoms": [
+        "loose",
+        "watery stools"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "loose watery stools"
+    },
+    {
+      "disease": "eating disorder",
+      "symptoms": [
+        "disturbance in eating behavior that can lead to serious health problems"
+      ],
+      "cures": [
+        "treatment for eating disorders may include therapy",
+        "medication",
+        "support groups"
+      ],
+      "doctors": [
+        "psychologist",
+        "psychiatrist"
+      ],
+      "risk_raw": "varies depending on the type of eating disorder",
+      "risk": "varies",
+      "symptom_text": "disturbance in eating behavior that can lead to serious health problems"
+    },
+    {
+      "disease": "epilepsy",
+      "symptoms": [
+        "seizures"
+      ],
+      "cures": [
+        "medication",
+        "surgery"
+      ],
+      "doctors": [
+        "neurologist"
+      ],
+      "risk_raw": "varies depending on the type of epilepsy",
+      "risk": "varies",
+      "symptom_text": "seizures"
+    },
+    {
+      "disease": "fever",
+      "symptoms": [
+        "elevated body temperature"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "elevated body temperature"
+    },
+    {
+      "disease": "food poisoning",
+      "symptoms": [
+        "nausea",
+        "vomiting",
+        "diarrhea",
+        "abdominal cramps"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "nausea vomiting diarrhea abdominal cramps"
+    },
+    {
+      "disease": "gallstones",
+      "symptoms": [
+        "pain in the upper right abdomen",
+        "nausea",
+        "vomiting",
+        "fever"
+      ],
+      "cures": [
+        "surgery"
+      ],
+      "doctors": [
+        "surgeon"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "pain in the upper right abdomen nausea vomiting fever"
+    },
+    {
+      "disease": "gonorrhea",
+      "symptoms": [
+        "sexually transmitted infection that can cause burning during urination",
+        "discharge from the penis or vagina",
+        "pain in the lower abdomen"
+      ],
+      "cures": [
+        "antibiotics"
+      ],
+      "doctors": [
+        "urologist",
+        "gynecologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "sexually transmitted infection that can cause burning during urination discharge from the penis or vagina pain in the lower abdomen"
+    },
+    {
+      "disease": "heart disease",
+      "symptoms": [
+        "chest pain",
+        "shortness of breath",
+        "fatigue",
+        "dizziness",
+        "fainting"
+      ],
+      "cures": [
+        "treatment for heart disease may include medication",
+        "lifestyle changes",
+        "surgery"
+      ],
+      "doctors": [
+        "cardiologist"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "chest pain shortness of breath fatigue dizziness fainting"
+    },
+    {
+      "disease": "hepatitis",
+      "symptoms": [
+        "inflammation of the liver"
+      ],
+      "cures": [
+        "treatment for hepatitis may include medication",
+        "rest",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "varies depending on the type of hepatitis",
+      "risk": "varies",
+      "symptom_text": "inflammation of the liver"
+    },
+    {
+      "disease": "herpes",
+      "symptoms": [
+        "sexually transmitted infection that can cause blisters on the genitals",
+        "mouth",
+        "other parts of the body"
+      ],
+      "cures": [
+        "there is no cure for herpes",
+        "but there are treatments that can help manage the symptoms"
+      ],
+      "doctors": [
+        "urologist",
+        "gynecologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "sexually transmitted infection that can cause blisters on the genitals mouth other parts of the body"
+    },
+    {
+      "disease": "influenza",
+      "symptoms": [
+        "fever",
+        "cough",
+        "sore throat",
+        "runny or stuffy nose",
+        "muscle aches",
+        "headache",
+        "fatigue"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "rest",
+        "fluids"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "fever cough sore throat runny or stuffy nose muscle aches headache fatigue"
+    },
+    {
+      "disease": "irritable bowel syndrome (ibs)",
+      "symptoms": [
+        "abdominal pain",
+        "bloating",
+        "constipation",
+        "diarrhea"
+      ],
+      "cures": [
+        "treatment for ibs may include diet",
+        "lifestyle changes",
+        "medication"
+      ],
+      "doctors": [
+        "family doctor",
+        "gastroenterologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "abdominal pain bloating constipation diarrhea"
+    },
+    {
+      "disease": "kidney stones",
+      "symptoms": [
+        "pain in the lower back or side",
+        "nausea",
+        "vomiting",
+        "blood in the urine"
+      ],
+      "cures": [
+        "surgery"
+      ],
+      "doctors": [
+        "urologist"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "pain in the lower back or side nausea vomiting blood in the urine"
+    },
+    {
+      "disease": "lung cancer",
+      "symptoms": [
+        "cough that does not go away",
+        "shortness of breath",
+        "chest pain",
+        "unexplained weight loss",
+        "fatigue",
+        "blood in the sputum"
+      ],
+      "cures": [
+        "surgery",
+        "chemotherapy",
+        "radiation therapy"
+      ],
+      "doctors": [
+        "oncologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "cough that does not go away shortness of breath chest pain unexplained weight loss fatigue blood in the sputum"
+    },
+    {
+      "disease": "malaria",
+      "symptoms": [
+        "fever",
+        "chills",
+        "sweating",
+        "headache",
+        "muscle aches",
+        "fatigue",
+        "vomiting",
+        "diarrhea"
+      ],
+      "cures": [
+        "antimalarial drugs"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "fever chills sweating headache muscle aches fatigue vomiting diarrhea"
+    },
+    {
+      "disease": "measles",
+      "symptoms": [
+        "fever",
+        "cough",
+        "runny nose",
+        "red eyes",
+        "sore throat",
+        "rash"
+      ],
+      "cures": [
+        "measles vaccine"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "fever cough runny nose red eyes sore throat rash"
+    },
+    {
+      "disease": "meningitis",
+      "symptoms": [
+        "fever",
+        "headache",
+        "stiff neck",
+        "nausea",
+        "vomiting",
+        "sensitivity to light"
+      ],
+      "cures": [
+        "antibiotics"
+      ],
+      "doctors": [
+        "neurologist",
+        "neurosurgeon"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "fever headache stiff neck nausea vomiting sensitivity to light"
+    },
+    {
+      "disease": "mononucleosis",
+      "symptoms": [
+        "fever",
+        "sore throat",
+        "fatigue",
+        "swollen lymph nodes",
+        "rash"
+      ],
+      "cures": [
+        "there is no cure for mononucleosis",
+        "but symptoms can be treated with rest",
+        "fluids",
+        "over-the-counter medications"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "fever sore throat fatigue swollen lymph nodes rash"
+    },
+    {
+      "disease": "rabies",
+      "symptoms": [
+        "fever",
+        "headache",
+        "muscle aches",
+        "tingling at the bite site",
+        "difficulty swallowing",
+        "hydrophobia",
+        "aerophobia"
+      ],
+      "cures": [
+        "rabies vaccine"
+      ],
+      "doctors": [
+        "doctor",
+        "urgent care"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "fever headache muscle aches tingling at the bite site difficulty swallowing hydrophobia aerophobia"
+    },
+    {
+      "disease": "salmonella",
+      "symptoms": [
+        "fever",
+        "diarrhea",
+        "abdominal cramps",
+        "nausea",
+        "vomiting"
+      ],
+      "cures": [
+        "antibiotics"
+      ],
+      "doctors": [
+        "family doctor",
+        "urgent care"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "fever diarrhea abdominal cramps nausea vomiting"
+    },
+    {
+      "disease": "shingles",
+      "symptoms": [
+        "painful rash that follows nerve path"
+      ],
+      "cures": [
+        "antiviral medication"
+      ],
+      "doctors": [
+        "family doctor",
+        "dermatologist"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "painful rash that follows nerve path"
+    },
+    {
+      "disease": "tuberculosis (tb)",
+      "symptoms": [
+        "cough that does not go away",
+        "fever",
+        "night sweats",
+        "weight loss",
+        "fatigue",
+        "chest pain"
+      ],
+      "cures": [
+        "antibiotics"
+      ],
+      "doctors": [
+        "family doctor",
+        "pulmonologist"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "cough that does not go away fever night sweats weight loss fatigue chest pain"
+    },
+    {
+      "disease": "urinary tract infection (uti)",
+      "symptoms": [
+        "painful urination",
+        "burning",
+        "frequent urination",
+        "urgency to urinate",
+        "blood in the urine"
+      ],
+      "cures": [
+        "antibiotics"
+      ],
+      "doctors": [
+        "urologist"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "painful urination burning frequent urination urgency to urinate blood in the urine"
+    },
+    {
+      "disease": "varicose veins",
+      "symptoms": [
+        "swollen",
+        "twisted veins",
+        "usually in the legs"
+      ],
+      "cures": [
+        "surgery",
+        "compression stockings",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "vascular surgeon"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "swollen twisted veins usually in the legs"
+    },
+    {
+      "disease": "warts",
+      "symptoms": [
+        "raised",
+        "rough growths on the skin"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "prescription medications",
+        "cryotherapy",
+        "laser therapy"
+      ],
+      "doctors": [
+        "dermatologist"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "raised rough growths on the skin"
+    },
+    {
+      "disease": "yeast infection",
+      "symptoms": [
+        "itching",
+        "burning",
+        "discharge from the vaginor penis"
+      ],
+      "cures": [
+        "over-the-counter medications",
+        "prescription medications"
+      ],
+      "doctors": [
+        "urologist",
+        "gynecologist"
+      ],
+      "risk_raw": "low (0.1%)",
+      "risk": "moderate",
+      "symptom_text": "itching burning discharge from the vaginor penis"
+    },
+    {
+      "disease": "acanthamoebkeratitis",
+      "symptoms": [
+        "pain",
+        "redness",
+        "inflammation in the eye"
+      ],
+      "cures": [
+        "antibiotics",
+        "antifungals",
+        "surgery"
+      ],
+      "doctors": [
+        "ophthalmologist"
+      ],
+      "risk_raw": "low (0.1%",
+      "risk": "moderate",
+      "symptom_text": "pain redness inflammation in the eye"
+    },
+    {
+      "disease": "acute appendicitis",
+      "symptoms": [
+        "pain in the lower right abdomen",
+        "nausea",
+        "vomiting",
+        "fever"
+      ],
+      "cures": [
+        "appendectomy"
+      ],
+      "doctors": [
+        "surgeon"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "pain in the lower right abdomen nausea vomiting fever"
+    },
+    {
+      "disease": "acute kidney injury (aki)",
+      "symptoms": [
+        "decreased kidney function"
+      ],
+      "cures": [
+        "treatment for the underlying cause",
+        "such as dehydration",
+        "infection",
+        "medication side effect"
+      ],
+      "doctors": [
+        "nephrologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "decreased kidney function"
+    },
+    {
+      "disease": "aortic aneurysm",
+      "symptoms": [
+        "bulge in the wall of the aorta",
+        "the largest artery in the body"
+      ],
+      "cures": [
+        "surgery"
+      ],
+      "doctors": [
+        "vascular surgeon"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "bulge in the wall of the aorta the largest artery in the body"
+    },
+    {
+      "disease": "colorectal cancer",
+      "symptoms": [
+        "change in bowel habits",
+        "such as diarrhea",
+        "constipation",
+        "narrowing of the stool",
+        "blood in the stool",
+        "abdominal pain",
+        "unexplained weight loss"
+      ],
+      "cures": [
+        "surgery",
+        "chemotherapy",
+        "radiation therapy"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "change in bowel habits such as diarrhea constipation narrowing of the stool blood in the stool abdominal pain unexplained weight loss"
+    },
+    {
+      "disease": "dementia",
+      "symptoms": [
+        "memory loss",
+        "confusion",
+        "difficulty thinking",
+        "changes in personality or behavior"
+      ],
+      "cures": [
+        "there is no cure for dementia",
+        "but there are treatments that can help manage the symptoms"
+      ],
+      "doctors": [
+        "neurologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "memory loss confusion difficulty thinking changes in personality or behavior"
+    },
+    {
+      "disease": "erectile dysfunction",
+      "symptoms": [
+        "difficulty getting",
+        "keeping an erection"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes",
+        "surgery"
+      ],
+      "doctors": [
+        "urologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "difficulty getting keeping an erection"
+    },
+    {
+      "disease": "fibromyalgi",
+      "symptoms": [
+        "widespread pain",
+        "fatigue",
+        "tenderness"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "rheumatologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "widespread pain fatigue tenderness"
+    },
+    {
+      "disease": "glaucoma",
+      "symptoms": [
+        "increased pressure in the eye that can damage the optic nerve",
+        "lead to vision loss"
+      ],
+      "cures": [
+        "medication",
+        "surgery"
+      ],
+      "doctors": [
+        "ophthalmologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "increased pressure in the eye that can damage the optic nerve lead to vision loss"
+    },
+    {
+      "disease": "heart failure",
+      "symptoms": [
+        "condition in which the heart cannot pump blood as well as it should"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes",
+        "surgery"
+      ],
+      "doctors": [
+        "cardiologist"
+      ],
+      "risk_raw": "high (20%)",
+      "risk": "high",
+      "symptom_text": "condition in which the heart cannot pump blood as well as it should"
+    },
+    {
+      "disease": "kidney disease",
+      "symptoms": [
+        "damage to the kidneys that can lead to kidney failure"
+      ],
+      "cures": [
+        "treatment for the underlying cause",
+        "such as high blood pressure",
+        "diabetes",
+        "an infection"
+      ],
+      "doctors": [
+        "nephrologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "damage to the kidneys that can lead to kidney failure"
+    },
+    {
+      "disease": "lung disease",
+      "symptoms": [
+        "condition that affects the lungs",
+        "can make it difficult to breathe"
+      ],
+      "cures": [
+        "treatment for the underlying cause",
+        "such as asthma",
+        "chronic obstructive pulmonary disease (copd)",
+        "pneumonia"
+      ],
+      "doctors": [
+        "pulmonologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "condition that affects the lungs can make it difficult to breathe"
+    },
+    {
+      "disease": "parkinson's disease",
+      "symptoms": [
+        "tremors",
+        "slow movement",
+        "stiffness",
+        "difficulty with balance",
+        "coordination"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "neurologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "tremors slow movement stiffness difficulty with balance coordination"
+    },
+    {
+      "disease": "peptic ulcer disease",
+      "symptoms": [
+        "pain in the upper abdomen",
+        "indigestion",
+        "nausea",
+        "vomiting"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes",
+        "surgery"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "pain in the upper abdomen indigestion nausea vomiting"
+    },
+    {
+      "disease": "peripheral artery disease",
+      "symptoms": [
+        "pain",
+        "numbness",
+        "tingling in the arms or legs"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes",
+        "surgery"
+      ],
+      "doctors": [
+        "vascular surgeon"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "pain numbness tingling in the arms or legs"
+    },
+    {
+      "disease": "prostate cancer",
+      "symptoms": [
+        "difficulty urinating",
+        "blood in the urine",
+        "pain in the back or hips",
+        "erectile dysfunction"
+      ],
+      "cures": [
+        "surgery",
+        "radiation therapy",
+        "hormone therapy"
+      ],
+      "doctors": [
+        "urologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "difficulty urinating blood in the urine pain in the back or hips erectile dysfunction"
+    },
+    {
+      "disease": "rheumatoid arthritis",
+      "symptoms": [
+        "pain",
+        "swelling",
+        "stiffness in the joints"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "rheumatologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "pain swelling stiffness in the joints"
+    },
+    {
+      "disease": "stomach cancer",
+      "symptoms": [
+        "pain in the upper abdomen",
+        "indigestion",
+        "nausea",
+        "vomiting",
+        "weight loss"
+      ],
+      "cures": [
+        "surgery",
+        "chemotherapy",
+        "radiation therapy"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "pain in the upper abdomen indigestion nausea vomiting weight loss"
+    },
+    {
+      "disease": "thyroid cancer",
+      "symptoms": [
+        "lump in the neck",
+        "hoarseness",
+        "fatigue",
+        "weight loss",
+        "unexplained heat intolerance",
+        "sensitivity to cold"
+      ],
+      "cures": [
+        "surgery",
+        "radiation therapy",
+        "hormone therapy"
+      ],
+      "doctors": [
+        "endocrinologist"
+      ],
+      "risk_raw": "high (70%)",
+      "risk": "high",
+      "symptom_text": "lump in the neck hoarseness fatigue weight loss unexplained heat intolerance sensitivity to cold"
+    },
+    {
+      "disease": "ulcerative colitis",
+      "symptoms": [
+        "diarrhea",
+        "bloody stool",
+        "abdominal pain",
+        "weight loss"
+      ],
+      "cures": [
+        "medication",
+        "surgery"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "diarrhea bloody stool abdominal pain weight loss"
+    },
+    {
+      "disease": "atopic dermatitis",
+      "symptoms": [
+        "itchy",
+        "red",
+        "inflamed skin"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "dermatologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "itchy red inflamed skin"
+    },
+    {
+      "disease": "celiac disease",
+      "symptoms": [
+        "diarrhea",
+        "bloating",
+        "weight loss",
+        "fatigue",
+        "abdominal pain"
+      ],
+      "cures": [
+        "gluten-free diet"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "diarrhea bloating weight loss fatigue abdominal pain"
+    },
+    {
+      "disease": "chronic kidney disease",
+      "symptoms": [
+        "fatigue",
+        "shortness of breath",
+        "swelling",
+        "high blood pressure",
+        "changes in urination"
+      ],
+      "cures": [
+        "treatment for the underlying cause",
+        "such as high blood pressure",
+        "diabetes",
+        "an infection"
+      ],
+      "doctors": [
+        "nephrologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "fatigue shortness of breath swelling high blood pressure changes in urination"
+    },
+    {
+      "disease": "crohn's disease",
+      "symptoms": [
+        "diarrhea",
+        "bloody stool",
+        "abdominal pain",
+        "weight loss"
+      ],
+      "cures": [
+        "medication",
+        "surgery"
+      ],
+      "doctors": [
+        "gastroenterologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "diarrhea bloody stool abdominal pain weight loss"
+    },
+    {
+      "disease": "fibromyalgia",
+      "symptoms": [
+        "widespread pain",
+        "fatigue",
+        "tenderness"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "rheumatologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "widespread pain fatigue tenderness"
+    },
+    {
+      "disease": "graves' disease",
+      "symptoms": [
+        "hyperthyroidism",
+        "which is an overactive thyroid"
+      ],
+      "cures": [
+        "medication",
+        "surgery"
+      ],
+      "doctors": [
+        "endocrinologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "hyperthyroidism which is an overactive thyroid"
+    },
+    {
+      "disease": "hashimoto's thyroiditis",
+      "symptoms": [
+        "hypothyroidism",
+        "which is an underactive thyroid"
+      ],
+      "cures": [
+        "medication"
+      ],
+      "doctors": [
+        "endocrinologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "hypothyroidism which is an underactive thyroid"
+    },
+    {
+      "disease": "lupus",
+      "symptoms": [
+        "chronic autoimmune disease that can affect any part of the body"
+      ],
+      "cures": [
+        "medication",
+        "lifestyle changes"
+      ],
+      "doctors": [
+        "rheumatologist"
+      ],
+      "risk_raw": "varies",
+      "risk": "varies",
+      "symptom_text": "chronic autoimmune disease that can affect any part of the body"
+    }
+  ],
+  "inverted_index": {
+    "fever": [
+      "flu",
+      "pneumonia",
+      "adenovirus",
+      "appendicitis",
+      "bacterial meningitis",
+      "chickenpox",
+      "gallstones",
+      "influenza",
+      "malaria",
+      "measles",
+      "meningitis",
+      "mononucleosis",
+      "rabies",
+      "salmonella",
+      "tuberculosis (tb)",
+      "acute appendicitis"
+    ],
+    "cough": [
+      "flu",
+      "bronchitis",
+      "pneumonia",
+      "adenovirus",
+      "common cold",
+      "influenza",
+      "measles"
+    ],
+    "sore throat": [
+      "flu",
+      "adenovirus",
+      "common cold",
+      "influenza",
+      "measles",
+      "mononucleosis"
+    ],
+    "runny or stuffy nose": [
+      "flu",
+      "influenza"
+    ],
+    "muscle aches": [
+      "flu",
+      "chickenpox",
+      "influenza",
+      "malaria",
+      "rabies"
+    ],
+    "headache": [
+      "flu",
+      "bacterial meningitis",
+      "chickenpox",
+      "influenza",
+      "malaria",
+      "meningitis",
+      "rabies"
+    ],
+    "fatigue": [
+      "flu",
+      "pneumonia",
+      "cancer",
+      "diabetes",
+      "anemia",
+      "chickenpox",
+      "heart disease",
+      "influenza",
+      "lung cancer",
+      "malaria",
+      "mononucleosis",
+      "tuberculosis (tb)",
+      "fibromyalgi",
+      "thyroid cancer",
+      "celiac disease",
+      "chronic kidney disease",
+      "fibromyalgia"
+    ],
+    "mucus production": [
+      "bronchitis"
+    ],
+    "shortness of breath": [
+      "bronchitis",
+      "pneumonia",
+      "heart attack",
+      "anemia",
+      "asthma",
+      "blood clot",
+      "heart disease",
+      "lung cancer",
+      "chronic kidney disease"
+    ],
+    "chest pain": [
+      "bronchitis",
+      "pneumonia",
+      "heart attack",
+      "blood clot",
+      "heart disease",
+      "lung cancer",
+      "tuberculosis (tb)"
+    ],
+    "nausea": [
+      "heart attack",
+      "appendicitis",
+      "bacterial meningitis",
+      "food poisoning",
+      "gallstones",
+      "kidney stones",
+      "meningitis",
+      "salmonella",
+      "acute appendicitis",
+      "peptic ulcer disease",
+      "stomach cancer"
+    ],
+    "vomiting": [
+      "heart attack",
+      "aflatoxicosis",
+      "appendicitis",
+      "bacterial meningitis",
+      "food poisoning",
+      "gallstones",
+      "kidney stones",
+      "malaria",
+      "meningitis",
+      "salmonella",
+      "acute appendicitis",
+      "peptic ulcer disease",
+      "stomach cancer"
+    ],
+    "lightheadedness": [
+      "heart attack",
+      "anemia"
+    ],
+    "sweating": [
+      "heart attack",
+      "malaria"
+    ],
+    "sudden weakness": [
+      "stroke"
+    ],
+    "numbness on one side of the body": [
+      "stroke"
+    ],
+    "confusion": [
+      "stroke",
+      "alzheimer's disease",
+      "dementia"
+    ],
+    "difficulty speaking": [
+      "stroke"
+    ],
+    "trouble seeing in one eye": [
+      "stroke"
+    ],
+    "severe headache": [
+      "stroke"
+    ],
+    "lump": [
+      "cancer"
+    ],
+    "unexplained weight loss": [
+      "cancer",
+      "diabetes",
+      "lung cancer",
+      "colorectal cancer"
+    ],
+    "changes in bowel": [
+      "cancer"
+    ],
+    "bladder habits": [
+      "cancer"
+    ],
+    "persistent cough": [
+      "cancer"
+    ],
+    "indigestion": [
+      "cancer",
+      "peptic ulcer disease",
+      "stomach cancer"
+    ],
+    "unexplained bleeding or discharge": [
+      "cancer"
+    ],
+    "increased thirst": [
+      "diabetes"
+    ],
+    "frequent urination": [
+      "diabetes",
+      "bladder cancer",
+      "urinary tract infection (uti)"
+    ],
+    "blurred vision": [
+      "diabetes"
+    ],
+    "cuts that are slow to heal": [
+      "diabetes"
+    ],
+    "memory loss": [
+      "alzheimer's disease",
+      "dementia"
+    ],
+    "difficulty thinking": [
+      "alzheimer's disease",
+      "dementia"
+    ],
+    "changes in personality or behavior": [
+      "alzheimer's disease",
+      "dementia"
+    ],
+    "pain": [
+      "arthritis",
+      "blood clot",
+      "bursitis",
+      "acanthamoebkeratitis",
+      "peripheral artery disease",
+      "rheumatoid arthritis"
+    ],
+    "stiffness": [
+      "arthritis",
+      "parkinson's disease"
+    ],
+    "swelling": [
+      "arthritis",
+      "blood clot",
+      "bursitis",
+      "rheumatoid arthritis",
+      "chronic kidney disease"
+    ],
+    "inflammation in the joints": [
+      "arthritis"
+    ],
+    "conjunctivitis": [
+      "adenovirus"
+    ],
+    "rash": [
+      "adenovirus",
+      "chickenpox",
+      "measles",
+      "mononucleosis"
+    ],
+    "pink eye": [
+      "adenovirus"
+    ],
+    "diarrhea": [
+      "aflatoxicosis",
+      "food poisoning",
+      "irritable bowel syndrome (ibs)",
+      "malaria",
+      "salmonella",
+      "ulcerative colitis",
+      "celiac disease",
+      "crohn's disease"
+    ],
+    "jaundice": [
+      "aflatoxicosis"
+    ],
+    "liver damage": [
+      "aflatoxicosis",
+      "alcoholism"
+    ],
+    "death": [
+      "aflatoxicosis"
+    ],
+    "physical dependence on alcohol": [
+      "alcoholism"
+    ],
+    "tolerance to alcohol": [
+      "alcoholism"
+    ],
+    "withdrawal symptoms": [
+      "alcoholism"
+    ],
+    "impaired judgment": [
+      "alcoholism"
+    ],
+    "memory problems": [
+      "alcoholism"
+    ],
+    "heart disease": [
+      "alcoholism"
+    ],
+    "cancer": [
+      "alcoholism"
+    ],
+    "runny nose": [
+      "allergic rhinitis",
+      "common cold",
+      "measles"
+    ],
+    "sneezing": [
+      "allergic rhinitis",
+      "common cold"
+    ],
+    "itchy eyes": [
+      "allergic rhinitis"
+    ],
+    "itchy nose": [
+      "allergic rhinitis"
+    ],
+    "throat": [
+      "allergic rhinitis"
+    ],
+    "palate": [
+      "allergic rhinitis"
+    ],
+    "pale skin": [
+      "anemia"
+    ],
+    "dizziness": [
+      "anemia",
+      "heart disease"
+    ],
+    "excessive worry": [
+      "anxiety disorder"
+    ],
+    "fear": [
+      "anxiety disorder"
+    ],
+    "anxiety that interfere with daily life": [
+      "anxiety disorder"
+    ],
+    "pain in the lower right abdomen": [
+      "appendicitis",
+      "acute appendicitis"
+    ],
+    "difficulty with social interaction": [
+      "asperger syndrome"
+    ],
+    "repetitive behaviors": [
+      "asperger syndrome"
+    ],
+    "restricted interests": [
+      "asperger syndrome"
+    ],
+    "wheezing": [
+      "asthma"
+    ],
+    "coughing": [
+      "asthma"
+    ],
+    "chest tightness": [
+      "asthma"
+    ],
+    "stiff neck": [
+      "bacterial meningitis",
+      "meningitis"
+    ],
+    "sensitivity to light": [
+      "bacterial meningitis",
+      "meningitis"
+    ],
+    "extreme mood swings": [
+      "bipolar disorder"
+    ],
+    "from manito depression": [
+      "bipolar disorder"
+    ],
+    "blood in the urine": [
+      "bladder cancer",
+      "kidney stones",
+      "urinary tract infection (uti)",
+      "prostate cancer"
+    ],
+    "pain or burning when urinating": [
+      "bladder cancer"
+    ],
+    "urgency to urinate": [
+      "bladder cancer",
+      "urinary tract infection (uti)"
+    ],
+    "incontinence": [
+      "bladder cancer"
+    ],
+    "redness": [
+      "blood clot",
+      "acanthamoebkeratitis"
+    ],
+    "warmth": [
+      "blood clot"
+    ],
+    "tenderness in the affected area": [
+      "blood clot"
+    ],
+    "difficulty breathing": [
+      "blood clot"
+    ],
+    "coughing up blood": [
+      "blood clot"
+    ],
+    "inflammation in bursa": [
+      "bursitis"
+    ],
+    "which is small sac of fluid that cushions joints": [
+      "bursitis"
+    ],
+    "abnormal pap test results": [
+      "cervical cancer"
+    ],
+    "abnormal vaginal bleeding": [
+      "cervical cancer"
+    ],
+    "pain during sex": [
+      "cervical cancer"
+    ],
+    "chronic bronchitis": [
+      "chronic obstructive pulmonary disease (copd)"
+    ],
+    "emphysema": [
+      "chronic obstructive pulmonary disease (copd)"
+    ],
+    "high levels of cholesterol in the blood": [
+      "cholesterol"
+    ],
+    "congestion": [
+      "common cold"
+    ],
+    "red": [
+      "conjunctivitis",
+      "atopic dermatitis"
+    ],
+    "itchy": [
+      "conjunctivitis",
+      "atopic dermatitis"
+    ],
+    "watery eyes": [
+      "conjunctivitis"
+    ],
+    "sadness": [
+      "depression"
+    ],
+    "hopelessness": [
+      "depression"
+    ],
+    "loss of interest in activities": [
+      "depression"
+    ],
+    "changes in appetite": [
+      "depression"
+    ],
+    "sleep": [
+      "depression"
+    ],
+    "energy levels": [
+      "depression"
+    ],
+    "loose": [
+      "diarrhea"
+    ],
+    "watery stools": [
+      "diarrhea"
+    ],
+    "disturbance in eating behavior that can lead to serious health problems": [
+      "eating disorder"
+    ],
+    "seizures": [
+      "epilepsy"
+    ],
+    "elevated body temperature": [
+      "fever"
+    ],
+    "abdominal cramps": [
+      "food poisoning",
+      "salmonella"
+    ],
+    "pain in the upper right abdomen": [
+      "gallstones"
+    ],
+    "sexually transmitted infection that can cause burning during urination": [
+      "gonorrhea"
+    ],
+    "discharge from the penis or vagina": [
+      "gonorrhea"
+    ],
+    "pain in the lower abdomen": [
+      "gonorrhea"
+    ],
+    "fainting": [
+      "heart disease"
+    ],
+    "inflammation of the liver": [
+      "hepatitis"
+    ],
+    "sexually transmitted infection that can cause blisters on the genitals": [
+      "herpes"
+    ],
+    "mouth": [
+      "herpes"
+    ],
+    "other parts of the body": [
+      "herpes"
+    ],
+    "abdominal pain": [
+      "irritable bowel syndrome (ibs)",
+      "colorectal cancer",
+      "ulcerative colitis",
+      "celiac disease",
+      "crohn's disease"
+    ],
+    "bloating": [
+      "irritable bowel syndrome (ibs)",
+      "celiac disease"
+    ],
+    "constipation": [
+      "irritable bowel syndrome (ibs)",
+      "colorectal cancer"
+    ],
+    "pain in the lower back or side": [
+      "kidney stones"
+    ],
+    "cough that does not go away": [
+      "lung cancer",
+      "tuberculosis (tb)"
+    ],
+    "blood in the sputum": [
+      "lung cancer"
+    ],
+    "chills": [
+      "malaria"
+    ],
+    "red eyes": [
+      "measles"
+    ],
+    "swollen lymph nodes": [
+      "mononucleosis"
+    ],
+    "tingling at the bite site": [
+      "rabies"
+    ],
+    "difficulty swallowing": [
+      "rabies"
+    ],
+    "hydrophobia": [
+      "rabies"
+    ],
+    "aerophobia": [
+      "rabies"
+    ],
+    "painful rash that follows nerve path": [
+      "shingles"
+    ],
+    "night sweats": [
+      "tuberculosis (tb)"
+    ],
+    "weight loss": [
+      "tuberculosis (tb)",
+      "stomach cancer",
+      "thyroid cancer",
+      "ulcerative colitis",
+      "celiac disease",
+      "crohn's disease"
+    ],
+    "painful urination": [
+      "urinary tract infection (uti)"
+    ],
+    "burning": [
+      "urinary tract infection (uti)",
+      "yeast infection"
+    ],
+    "swollen": [
+      "varicose veins"
+    ],
+    "twisted veins": [
+      "varicose veins"
+    ],
+    "usually in the legs": [
+      "varicose veins"
+    ],
+    "raised": [
+      "warts"
+    ],
+    "rough growths on the skin": [
+      "warts"
+    ],
+    "itching": [
+      "yeast infection"
+    ],
+    "discharge from the vaginor penis": [
+      "yeast infection"
+    ],
+    "inflammation in the eye": [
+      "acanthamoebkeratitis"
+    ],
+    "decreased kidney function": [
+      "acute kidney injury (aki)"
+    ],
+    "bulge in the wall of the aorta": [
+      "aortic aneurysm"
+    ],
+    "the largest artery in the body": [
+      "aortic aneurysm"
+    ],
+    "change in bowel habits": [
+      "colorectal cancer"
+    ],
+    "such as diarrhea": [
+      "colorectal cancer"
+    ],
+    "narrowing of the stool": [
+      "colorectal cancer"
+    ],
+    "blood in the stool": [
+      "colorectal cancer"
+    ],
+    "difficulty getting": [
+      "erectile dysfunction"
+    ],
+    "keeping an erection": [
+      "erectile dysfunction"
+    ],
+    "widespread pain": [
+      "fibromyalgi",
+      "fibromyalgia"
+    ],
+    "tenderness": [
+      "fibromyalgi",
+      "fibromyalgia"
+    ],
+    "increased pressure in the eye that can damage the optic nerve": [
+      "glaucoma"
+    ],
+    "lead to vision loss": [
+      "glaucoma"
+    ],
+    "condition in which the heart cannot pump blood as well as it should": [
+      "heart failure"
+    ],
+    "damage to the kidneys that can lead to kidney failure": [
+      "kidney disease"
+    ],
+    "condition that affects the lungs": [
+      "lung disease"
+    ],
+    "can make it difficult to breathe": [
+      "lung disease"
+    ],
+    "tremors": [
+      "parkinson's disease"
+    ],
+    "slow movement": [
+      "parkinson's disease"
+    ],
+    "difficulty with balance": [
+      "parkinson's disease"
+    ],
+    "coordination": [
+      "parkinson's disease"
+    ],
+    "pain in the upper abdomen": [
+      "peptic ulcer disease",
+      "stomach cancer"
+    ],
+    "numbness": [
+      "peripheral artery disease"
+    ],
+    "tingling in the arms or legs": [
+      "peripheral artery disease"
+    ],
+    "difficulty urinating": [
+      "prostate cancer"
+    ],
+    "pain in the back or hips": [
+      "prostate cancer"
+    ],
+    "erectile dysfunction": [
+      "prostate cancer"
+    ],
+    "stiffness in the joints": [
+      "rheumatoid arthritis"
+    ],
+    "lump in the neck": [
+      "thyroid cancer"
+    ],
+    "hoarseness": [
+      "thyroid cancer"
+    ],
+    "unexplained heat intolerance": [
+      "thyroid cancer"
+    ],
+    "sensitivity to cold": [
+      "thyroid cancer"
+    ],
+    "bloody stool": [
+      "ulcerative colitis",
+      "crohn's disease"
+    ],
+    "inflamed skin": [
+      "atopic dermatitis"
+    ],
+    "high blood pressure": [
+      "chronic kidney disease"
+    ],
+    "changes in urination": [
+      "chronic kidney disease"
+    ],
+    "hyperthyroidism": [
+      "graves' disease"
+    ],
+    "which is an overactive thyroid": [
+      "graves' disease"
+    ],
+    "hypothyroidism": [
+      "hashimoto's thyroiditis"
+    ],
+    "which is an underactive thyroid": [
+      "hashimoto's thyroiditis"
+    ],
+    "chronic autoimmune disease that can affect any part of the body": [
+      "lupus"
+    ]
+  },
+  "disease_names": [
+    "flu",
+    "bronchitis",
+    "pneumonia",
+    "heart attack",
+    "stroke",
+    "cancer",
+    "diabetes",
+    "alzheimer's disease",
+    "arthritis",
+    "adenovirus",
+    "aflatoxicosis",
+    "alcoholism",
+    "allergic rhinitis",
+    "anemia",
+    "anxiety disorder",
+    "appendicitis",
+    "asperger syndrome",
+    "asthma",
+    "bacterial meningitis",
+    "bipolar disorder",
+    "bladder cancer",
+    "blood clot",
+    "bursitis",
+    "cervical cancer",
+    "chickenpox",
+    "chronic obstructive pulmonary disease (copd)",
+    "cholesterol",
+    "common cold",
+    "conjunctivitis",
+    "depression",
+    "diarrhea",
+    "eating disorder",
+    "epilepsy",
+    "fever",
+    "food poisoning",
+    "gallstones",
+    "gonorrhea",
+    "heart disease",
+    "hepatitis",
+    "herpes",
+    "influenza",
+    "irritable bowel syndrome (ibs)",
+    "kidney stones",
+    "lung cancer",
+    "malaria",
+    "measles",
+    "meningitis",
+    "mononucleosis",
+    "rabies",
+    "salmonella",
+    "shingles",
+    "tuberculosis (tb)",
+    "urinary tract infection (uti)",
+    "varicose veins",
+    "warts",
+    "yeast infection",
+    "acanthamoebkeratitis",
+    "acute appendicitis",
+    "acute kidney injury (aki)",
+    "aortic aneurysm",
+    "colorectal cancer",
+    "dementia",
+    "erectile dysfunction",
+    "fibromyalgi",
+    "glaucoma",
+    "heart failure",
+    "kidney disease",
+    "lung disease",
+    "parkinson's disease",
+    "peptic ulcer disease",
+    "peripheral artery disease",
+    "prostate cancer",
+    "rheumatoid arthritis",
+    "stomach cancer",
+    "thyroid cancer",
+    "ulcerative colitis",
+    "atopic dermatitis",
+    "celiac disease",
+    "chronic kidney disease",
+    "crohn's disease",
+    "fibromyalgia",
+    "graves' disease",
+    "hashimoto's thyroiditis",
+    "lupus"
+  ]
+}

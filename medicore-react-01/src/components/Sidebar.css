@@ -1,0 +1,261 @@
+/* ═══════════════════════════════════════════════════════════
+   MEDIINTEL — SIDEBAR
+   Patient portal  → cyan  (#00d4ff)
+   Doctor portal   → purple (#7c5cfc)
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --sidebar-accent: #00d4ff;          /* default: patient */
+}
+.sidebar.sidebar--doctor {
+  --sidebar-accent: #7c5cfc;          /* doctor override */
+}
+
+/* ── Shell ───────────────────────────────────────────────── */
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  background: var(--bg-deep);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: width var(--t-normal);
+  z-index: 100;
+}
+.sidebar.collapsed { width: 68px; }
+
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--sidebar-accent);
+}
+
+/* ── Logo ────────────────────────────────────────────────── */
+.sidebar-logo {
+  padding: 20px 16px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.logo-icon { font-size: 22px; flex-shrink: 0; }
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.logo-text span { color: var(--sidebar-accent); }
+.sidebar.collapsed .logo-text { display: none; }
+
+/* ── Role badge ──────────────────────────────────────────── */
+.sidebar-role-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px 10px;
+  overflow: hidden;
+}
+.sidebar.collapsed .sidebar-role-badge {
+  justify-content: center;
+  padding: 6px 8px;
+}
+.role-badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--sidebar-accent);
+  box-shadow: 0 0 6px var(--sidebar-accent);
+  animation: role-pulse 2.5s ease-in-out infinite;
+}
+@keyframes role-pulse {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
+.role-badge-text {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--sidebar-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+.sidebar.collapsed .role-badge-text { display: none; }
+
+/* ── Nav ─────────────────────────────────────────────────── */
+.sidebar-nav {
+  padding: 10px 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Doctor portal — fewer items, spread them out more */
+.sidebar--doctor .sidebar-nav {
+  gap: 4px;
+  padding: 14px 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  transition: all var(--t-fast);
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Doctor nav items — taller padding to use the space */
+.sidebar--doctor .nav-item {
+  padding: 13px 14px;
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.04);
+  color: var(--text-primary);
+  border-color: rgba(255,255,255,0.06);
+}
+.nav-item.active {
+  background: color-mix(in srgb, var(--sidebar-accent) 12%, transparent);
+  border-color: color-mix(in srgb, var(--sidebar-accent) 28%, transparent);
+  color: var(--sidebar-accent);
+}
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 20%; bottom: 20%;
+  width: 3px;
+  background: var(--sidebar-accent);
+  border-radius: 0 3px 3px 0;
+}
+.nav-icon  { font-size: 17px; flex-shrink: 0; }
+.nav-label {
+  font-family: var(--font-display);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+.sidebar.collapsed .nav-label { display: none; }
+
+/* ── Divider between nav sections (doctor only) ─────────── */
+.sidebar-nav-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.05);
+  margin: 6px 8px;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.sidebar-footer {
+  padding: 10px 8px 14px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.sidebar--doctor .sidebar-footer {
+  padding: 14px 8px 18px;
+}
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.user-avatar-wrap {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid color-mix(in srgb, var(--sidebar-accent) 25%, transparent);
+}
+.user-avatar { font-size: 15px; }
+.user-info   { display: flex; flex-direction: column; min-width: 0; overflow: hidden; }
+.user-name {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+.user-role-tag {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 1px;
+  color: var(--sidebar-accent);
+  opacity: 0.8;
+}
+.sidebar.collapsed .user-info { display: none; }
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: all var(--t-fast);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+}
+.btn-logout:hover {
+  background: rgba(255,71,87,0.08);
+  border-color: rgba(255,71,87,0.22);
+  color: var(--red);
+}
+.sidebar.collapsed .btn-logout .nav-label { display: none; }
+
+/* ── Toggle button ───────────────────────────────────────── */
+.sidebar-toggle {
+  margin: 8px;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--t-fast);
+  flex-shrink: 0;
+  font-size: 0.7rem;
+}
+.sidebar-toggle:hover {
+  color: var(--sidebar-accent);
+  border-color: color-mix(in srgb, var(--sidebar-accent) 35%, transparent);
+  background: color-mix(in srgb, var(--sidebar-accent) 8%, transparent);
+}

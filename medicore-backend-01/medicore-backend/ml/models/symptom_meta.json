@@ -1,0 +1,10 @@
+{
+  "diseases_total": 84,
+  "symptoms_indexed": 183,
+  "risk_distribution": {
+    "low": 1,
+    "moderate": 18,
+    "high": 29,
+    "varies": 36
+  }
+}

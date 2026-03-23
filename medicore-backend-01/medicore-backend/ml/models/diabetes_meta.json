@@ -1,0 +1,54 @@
+{
+  "model": "RandomForestClassifier",
+  "features": [
+    "gender_encoded",
+    "age",
+    "age_group",
+    "hypertension",
+    "heart_disease",
+    "smoking_encoded",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level",
+    "glucose_hba1c"
+  ],
+  "smoke_map": {
+    "never": 0,
+    "No Info": 1,
+    "not current": 2,
+    "former": 3,
+    "ever": 4,
+    "current": 5
+  },
+  "gender_map": {
+    "Male": 1,
+    "Female": 0,
+    "Other": 2
+  },
+  "accuracy": 0.9127,
+  "roc_auc": 0.9777,
+  "confusion_matrix": [
+    [
+      16718,
+      1582
+    ],
+    [
+      164,
+      1536
+    ]
+  ],
+  "feature_importances": {
+    "gender_encoded": 0.0028420181662376694,
+    "age": 0.09755700390634271,
+    "age_group": 0.06307136395852604,
+    "hypertension": 0.013535069128495125,
+    "heart_disease": 0.006084812209933752,
+    "smoking_encoded": 0.006015238395500403,
+    "bmi": 0.05809560525360604,
+    "HbA1c_level": 0.2587611524946343,
+    "blood_glucose_level": 0.15239776513334471,
+    "glucose_hba1c": 0.34163997135337926
+  },
+  "train_samples": 80000,
+  "test_samples": 20000
+}

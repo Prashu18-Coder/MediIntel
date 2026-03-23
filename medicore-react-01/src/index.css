@@ -1,0 +1,156 @@
+/* ============================================
+   MEDICORE AI — Design Tokens + Global Styles
+   Dark Medical Futurism
+   ============================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+:root {
+  /* ── Background Scale ── */
+  --bg-void:       #060b18;
+  --bg-deep:       #0a1120;
+  --bg-surface:    #0f1a2e;
+  --bg-card:       #131e33;
+  --bg-card-hover: #172342;
+  --bg-input:      #0d1624;
+
+  /* ── Accent Palette ── */
+  --cyan:   #00d4ff;
+  --teal:   #00b4a0;
+  --green:  #00e5b0;
+  --amber:  #ffb020;
+  --red:    #ff4757;
+  --purple: #7c5cfc;
+
+  /* ── Glow ── */
+  --glow-cyan:  0 0 20px rgba(0,212,255,0.28);
+  --glow-green: 0 0 20px rgba(0,229,176,0.28);
+  --glow-red:   0 0 20px rgba(255,71,87,0.28);
+
+  /* ── Text ── */
+  --text-primary:   #e8f0fe;
+  --text-secondary: #8fa3c0;
+  --text-muted:     #4a6080;
+
+  /* ── Borders ── */
+  --border-subtle: rgba(0,212,255,0.08);
+  --border-normal: rgba(0,212,255,0.15);
+  --border-bright: rgba(0,212,255,0.35);
+
+  /* ── Typography ── */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* ── Layout ── */
+  --sidebar-w:  240px;
+  --nav-h:      68px;
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+
+  /* ── Transitions ── */
+  --ease:      cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast:    0.15s var(--ease);
+  --t-normal:  0.25s var(--ease);
+  --t-slow:    0.4s  var(--ease);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-void);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--border-normal); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--cyan); }
+
+/* ── Selection ── */
+::selection { background: rgba(0,212,255,0.18); color: var(--cyan); }
+
+/* ── Typography ── */
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
+h3 { font-size: 1.1rem; font-weight: 700; }
+p  { color: var(--text-secondary); }
+
+/* ── Grid bg ── */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ── Animations ── */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulse-ring { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+@keyframes slideInRight { from { transform: translateX(110%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes fadeOut { to { opacity: 0; transform: translateX(110%); } }
+
+.animate-up { animation: fadeIn 0.6s var(--ease) both; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* ── Utility ── */
+.hidden { display: none !important; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-16 { gap: 16px; }
+
+/* ── Gradient text ── */
+.gradient-text {
+  background: linear-gradient(90deg, var(--cyan), var(--green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Label ── */
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ── Spinner ── */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-normal);
+  border-top-color: var(--cyan);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+/* ── Page loading ── */
+.page-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}

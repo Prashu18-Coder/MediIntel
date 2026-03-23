@@ -1,0 +1,63 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-void);
+}
+
+.main-area {
+  flex: 1;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.page-content {
+  padding: 32px;
+  max-width: 1200px;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+.page-header .label { margin-bottom: 4px; }
+.page-header h1 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin-bottom: 8px;
+}
+.page-header p { max-width: 560px; }
+
+/* Topbar */
+.topbar {
+  height: var(--nav-h);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: var(--bg-deep);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.topbar-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ai-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .page-content { padding: 20px 16px; }
+  .topbar       { padding: 0 16px; }
+}

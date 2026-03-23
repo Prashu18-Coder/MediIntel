@@ -1,0 +1,152 @@
+.emergency-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.sos-card { text-align: center; }
+.sos-idle, .sos-countdown, .sos-sent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.sos-icon-wrap { position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+.sos-ring {
+  position: absolute;
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,71,87,0.3);
+  animation: pulse-ring 2s ease infinite;
+  pointer-events: none;
+}
+.sos-btn {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--red), #c0392b);
+  border: none;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(255,71,87,0.4);
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+.sos-btn:hover { transform: scale(1.05); box-shadow: 0 0 40px rgba(255,71,87,0.6); }
+.sos-btn:active { transform: scale(0.97); }
+
+.countdown-ring {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  border: 4px solid var(--amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255,176,32,0.4);
+  margin-bottom: 8px;
+}
+.countdown-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--amber);
+}
+
+.sent-icon {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: rgba(0,229,176,0.15);
+  border: 2px solid rgba(0,229,176,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.location-badge {
+  padding: 8px 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.contact-form { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border-subtle); }
+.contacts-list { display: flex; flex-direction: column; gap: 10px; }
+.contact-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border-subtle); }
+.contact-item:last-child { border-bottom: none; }
+.contact-avatar { font-size: 22px; flex-shrink: 0; }
+.contact-name { font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; }
+.contact-meta { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+
+@media (max-width: 768px) {
+  .emergency-layout { grid-template-columns: 1fr; }
+}
+
+/* Alert type selector */
+.alert-type-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.alert-type-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--t-fast);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+.alert-type-btn:hover {
+  border-color: var(--alert-color, var(--red));
+  color: var(--text-primary);
+}
+.alert-type-btn.selected {
+  border-color: var(--alert-color, var(--red));
+  background: rgba(255,71,87,0.08);
+  color: var(--alert-color, var(--red));
+  font-weight: 600;
+}
+
+/* Emergency numbers */
+.emergency-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 12px;
+}
+.emergency-number-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.875rem;
+}
+.emergency-number-row:last-child { border-bottom: none; }
+.emergency-number-label { color: var(--text-secondary); }
+.emergency-number-val {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--red);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .alert-type-grid { grid-template-columns: repeat(3, 1fr); }
+}
