@@ -58,6 +58,7 @@ const del    = (path)       => request('DELETE', path)
 const upload = (path, form) => request('POST',   path, form, true)
 
 export const authAPI = {
+  googleAuth: (data) => post('/auth/google', data),
   register: (data) => post('/auth/register', data),
   login:    (data) => post('/auth/login', data),
   logout:   ()     => post('/auth/logout'),

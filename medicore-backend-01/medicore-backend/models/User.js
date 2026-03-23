@@ -15,6 +15,10 @@ const UserSchema = new mongoose.Schema({
   // Role — enforced server-side
   role:           { type: String, enum: ['patient','doctor'], default: 'patient' },
 
+  // Google OAuth
+  google_id:      { type: String, default: '' },
+  avatar_url:     { type: String, default: '' },
+
   // Doctor-only fields
   specialization: { type: String, default: '' },
   experience:     { type: String, default: '' },

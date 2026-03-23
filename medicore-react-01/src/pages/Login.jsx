@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { useToast } from '../context/ToastContext'
@@ -6,22 +6,82 @@ import { authAPI } from '../services/api'
 import { Button, Alert } from '../components/UI'
 import './Login.css'
 
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || ''
+
+function useGoogleScript() {
+  const [ready, setReady] = useState(!!window.google)
+  useEffect(() => {
+    if (window.google) { setReady(true); return }
+    const script = document.createElement('script')
+    script.src = 'https://accounts.google.com/gsi/client'
+    script.async = true
+    script.defer = true
+    script.onload = () => setReady(true)
+    document.head.appendChild(script)
+  }, [])
+  return ready
+}
+
 export default function Login() {
   const { isLoggedIn, login, role: savedRole } = useAuth()
   const toast    = useToast()
   const navigate = useNavigate()
+  const googleReady    = useGoogleScript()
+  const googleBtnRef   = useRef(null)
+  const googleInitRef  = useRef(false)
 
-  const [mode, setMode]       = useState('login')
+  const [mode, setMode]                 = useState('login')
   const [selectedRole, setSelectedRole] = useState('patient')
-  const [name, setName]       = useState('')
-  const [email, setEmail]     = useState('')
-  const [password, setPass]   = useState('')
-  const [error, setError]     = useState('')
-  const [loading, setLoading] = useState(false)
+  const [name, setName]                 = useState('')
+  const [email, setEmail]               = useState('')
+  const [password, setPass]             = useState('')
+  const [error, setError]               = useState('')
+  const [loading, setLoading]           = useState(false)
+  const [googleLoading, setGoogleLoading] = useState(false)
 
-  // Already logged in — redirect to correct dashboard
   if (isLoggedIn) {
     return <Navigate to={savedRole === 'doctor' ? '/doctor/dashboard' : '/dashboard'} replace />
+  }
+
+  // Initialize & render Google button whenever ready or role changes
+  useEffect(() => {
+    if (!googleReady || !window.google || !GOOGLE_CLIENT_ID || !googleBtnRef.current) return
+    try {
+      window.google.accounts.id.initialize({
+        client_id:  GOOGLE_CLIENT_ID,
+        callback:   (response) => handleGoogleSignIn(response.credential),
+        auto_select: false,
+      })
+      window.google.accounts.id.renderButton(googleBtnRef.current, {
+        theme:  'filled_black',
+        size:   'large',
+        width:  googleBtnRef.current.offsetWidth || 340,
+        text:   'continue_with',
+        shape:  'rectangular',
+        logo_alignment: 'left',
+      })
+    } catch(e) {
+      console.warn('[Google] renderButton failed:', e.message)
+    }
+  }, [googleReady, selectedRole])
+
+  async function handleGoogleSignIn(credential) {
+    setGoogleLoading(true)
+    setError('')
+    try {
+      const res = await authAPI.googleAuth({ credential, role: selectedRole })
+      if (res.access_token || res.token) {
+        login(res.access_token || res.token, res.user, selectedRole)
+        toast.success(`Welcome, ${res.user?.full_name?.split(' ')[0] || 'there'}! 🎉`)
+        navigate(selectedRole === 'doctor' ? '/doctor/dashboard' : '/dashboard', { replace: true })
+      } else {
+        throw new Error('No token received from server')
+      }
+    } catch (err) {
+      setError(err.message || 'Google Sign-In failed. Please try again.')
+    } finally {
+      setGoogleLoading(false)
+    }
   }
 
   async function handleSubmit(e) {
@@ -140,6 +200,26 @@ export default function Login() {
             ? `→ Sign In as ${selectedRole === 'doctor' ? 'Doctor' : 'Patient'}`
             : `→ Create ${selectedRole === 'doctor' ? 'Doctor' : 'Patient'} Account`}
         </Button>
+
+        {/* ── Google OAuth ── */}
+        <div className="login-divider">
+          <span className="login-divider-line" />
+          <span className="login-divider-text">or continue with</span>
+          <span className="login-divider-line" />
+        </div>
+
+        {/* Google renders its own button inside this div */}
+        <div
+          ref={googleBtnRef}
+          className="login-google-render-wrap"
+          style={{ opacity: googleLoading ? 0.5 : 1, pointerEvents: googleLoading ? 'none' : 'auto' }}
+        />
+
+        {!GOOGLE_CLIENT_ID && (
+          <div className="login-google-missing">
+            ⚠️ Add VITE_GOOGLE_CLIENT_ID to frontend .env to enable Google Sign-In
+          </div>
+        )}
 
         <p className="login-disclaimer">
           ⚕️ For educational purposes only. Always consult a licensed physician.
